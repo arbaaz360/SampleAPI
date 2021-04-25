@@ -26,6 +26,7 @@ namespace SampleAPI.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+            //change
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
